@@ -28,3 +28,4 @@ function dogYears(dogName, age) {
 var myDog = "Fido";
 
 dogYears(myDog, 4);
+
