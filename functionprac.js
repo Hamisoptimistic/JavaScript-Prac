@@ -20,6 +20,10 @@
 var test = 5;
 doIt(test);
 console.log(test);
+console.log ();
+
+
+
 
 function dogYears(dogName, age) {
   var years = age * 7;
