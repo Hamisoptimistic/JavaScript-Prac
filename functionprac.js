@@ -17,9 +17,9 @@
 //   param = 2;
 // }
 
-// var test = 5;
-// doIt(test);
-// console.log(test);
+var test = 5;
+doIt(test);
+console.log(test);
 
 function dogYears(dogName, age) {
   var years = age * 7;
