@@ -1,21 +1,21 @@
 
-// function whatshallwear(temp) {
-//   if (temp < 60) {
-//     console.log ('Wear a sweater');
-//   }
+function whatshallwear(temp) {
+  if (temp < 60) {
+    console.log ('Wear a sweater');
+  }
 
-//   else if (temp < 70) {
-//     console.log ('Wear a Jacket');
-//   }
-//   else {"Wear a T-shirt"};
-// }
+  else if (temp < 70) {
+    console.log ('Wear a Jacket');
+  }
+  else {"Wear a T-shirt"};
+}
 
-// whatshallwear(60);
+whatshallwear(60);
 
 
-// function doIt(param) {
-//   param = 2;
-// }
+function doIt(param) {
+  param = 2;
+}
 
 var test = 5;
 doIt(test);
