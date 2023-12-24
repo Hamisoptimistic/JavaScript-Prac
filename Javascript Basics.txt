@@ -1,0 +1,15 @@
+JavaScript basics
+
+1. numbers and math
+                                            Order of precedence = 
+1/1                                         (Brackets) = highest priority
+2*1                                         / and * = next highest priority
+1-1                                         + and - =  least priority
+(3+1)
+
+#Example
+let a = (20.99 + (7.99 * 2) )* 0.1
+
+console.log (a)
+
+Math.round() is used to round off number
