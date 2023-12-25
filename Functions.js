@@ -21,8 +21,14 @@
 // let result = addition (5, 5);
 // console.log (result);
 
-function calcAge(age) {
-	let ageindays = age*365;
-	return ageindays;
+// function calcAge(age) {
+// 	let ageindays = age*365;
+// 	return ageindays;
+// }
+// console.log (calcAge(23));
+
+function FindPerimeter(length,width) {
+	let peri = 2*(length + width);
+	return peri;
 }
-console.log (calcAge(23));
+console.log ('Perimeter is ' + FindPerimeter (5,5) + ' cm');
