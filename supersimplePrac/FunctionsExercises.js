@@ -18,8 +18,6 @@ function convertToFahrenheit (degree) {
   return Fahrenheit;
 }
 
-result = convertToFahrenheit(35);
-console.log (result);
 
 function convertToCelcius (degree) {
   let result = '';
@@ -27,24 +25,18 @@ function convertToCelcius (degree) {
   return Celcius;
 }
 
-result = convertToCelcius(110);
-console.log (result);
-
-
-
-function convertTemp(degree,unit) {
+function converTemp (degree,unit) {
   if (unit === 'C') {
-    let result = convertToFahrenheit(degree);
-    return result;
-    
+    result = Math.round (convertToFahrenheit(degree));
+    return `${result} F`;
   }
-  else if (unit === "F") {
-    result = convertToCelcius(degree);
-    return result;
+  else if (unit === 'F') {
+    result = Math.round (convertToCelcius(degree));
+    return `${result} C`;
   }
 }
 
-let conversion = convertTemp(50, 'C')
-console.log (`${conversion}` );
+let conv = converTemp(90, 'F');
+console.log (`${conv}`);
 
 
