@@ -74,8 +74,21 @@ function playgame(playermove) {
 
 }
 
-//Score
-let score = {Wins:0, Losses:0, Ties:0} || JSON.parse (localStorage.getItem('score'));
+// Score
+
+let score = {
+  Wins:0, 
+  Losses:0, 
+  Ties:0
+}
+
+const savedScore = JSON.parse(localStorage.getItem('score'));
+if (savedScore !== null) {
+  score = savedScore;
+}
+
+
+
 console.log (score);
 
 function resetscore () {
@@ -86,11 +99,3 @@ function resetscore () {
   localStorage.removeItem('score')
 
 }
-
-
-
-
-
-  
-
-  
