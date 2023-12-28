@@ -100,3 +100,4 @@ function resetscore () {
   localStorage.removeItem('score')
 
 }
+
