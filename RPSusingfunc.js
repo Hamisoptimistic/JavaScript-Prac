@@ -1,5 +1,6 @@
 // ComputerMove Logic
-let computermove = '';
+let computerMove = '';
+
 function pickcomputerMove () {
   const randomnumber = Math.random();
    
@@ -12,7 +13,7 @@ function pickcomputerMove () {
   else {
       computerMove = "Scissor";
   }
-  return computermove;
+  return computerMove;
 }
 
 // PlayerMove Logic
@@ -55,9 +56,37 @@ function playgame(playermove) {
       }
   }
 
-  alert (`You picked ${playermove} computer Picked ${computermove} ${result}`);
+  if (result === 'You Win') {
+    score.Wins = score.Wins + 1; 
+  }
+  else if (result === 'You Lose') {
+    score.Losses += 1;
+  }
+  else if (result === 'Tie') {
+    score.Ties += 1;
+  }
+
+  alert (`You picked ${playermove} computer Picked ${computermove} ${result}
+  Wins: ${score.Wins} Losses: ${score.Losses} Ties: ${score.Ties}`);
 
 }
+//Score
+let score = { 
+  Wins:0,
+  Losses:0,
+  Ties:0
+}
+
+function resetscore () {
+  score.Wins = 0;
+  score.Losses = 0;
+  score.Ties = 0;
+
+}
+
+
+
+
 
   
 
