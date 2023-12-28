@@ -1,6 +1,5 @@
 // ComputerMove Logic
 let computerMove = '';
-
 function pickcomputerMove () {
   const randomnumber = Math.random();
    
@@ -18,7 +17,6 @@ function pickcomputerMove () {
 
 // PlayerMove Logic
 let result = '';
-
 function playgame(playermove) {
   const computermove = pickcomputerMove();
 
@@ -32,6 +30,7 @@ function playgame(playermove) {
     else {
       result = 'You Win';
     }
+    
   }
   else if (playermove === "Scissor") {
     if (computerMove === "Rock") {
@@ -66,21 +65,25 @@ function playgame(playermove) {
     score.Ties += 1;
   }
 
+  localStorage.setItem('score', JSON.stringify (score));
+
+ 
+
   alert (`You picked ${playermove} computer Picked ${computermove} ${result}
   Wins: ${score.Wins} Losses: ${score.Losses} Ties: ${score.Ties}`);
 
 }
+
 //Score
-let score = { 
-  Wins:0,
-  Losses:0,
-  Ties:0
-}
+let score = {Wins:0, Losses:0, Ties:0} || JSON.parse (localStorage.getItem('score'));
+console.log (score);
 
 function resetscore () {
   score.Wins = 0;
   score.Losses = 0;
   score.Ties = 0;
+
+  localStorage.removeItem('score')
 
 }
 
