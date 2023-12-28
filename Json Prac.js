@@ -6,6 +6,7 @@
 //     review: 'positive'
 //   }
 // };
+ dadasd
 
 
 // // console.log (obj.rating.stars);
