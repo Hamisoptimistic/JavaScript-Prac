@@ -85,10 +85,6 @@ let score = {
 }
 
 const savedScore = JSON.parse(localStorage.getItem('scoreKey'));
-if (savedScore !== null) {
-  score = savedScore;
-}
-
 
 console.log (savedScore);
 
@@ -97,8 +93,8 @@ function resetscore () {
   score.Wins = 0;
   score.Losses = 0;
   score.Ties = 0;
-
-  localStorage.removeItem('score')
-
+  localStorage.removeItem('scoreKey');
 }
 
+if (savedScore !== null) {
+  score = savedScore};
