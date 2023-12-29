@@ -8,17 +8,20 @@ function HT(move) {
   if (ComputerMove < 0.2) {
     result = 'Heads'
     }
-  else if (ComputerMove > 0.2 && ComputerMove <0.4) {
+  else if (ComputerMove > 0.2 && ComputerMove < 0.4) {
     result = "Tails"
     }
-  else if (ComputerMove > 0.4 && ComputerMove <0.6) {
+  else if (ComputerMove > 0.4 && ComputerMove < 0.6) {
     result = "Heads"
     }
   else if (ComputerMove > 0.6 && ComputerMove < 0.8) {
     result = "Tails"
     }
-  else if (ComputerMove > 0.8 && ComputerMove < 0.9999) {
+  else if (ComputerMove > 0.8 && ComputerMove < 0.81) {
     result = "Heads"
+    }
+  else if (ComputerMove > 0.81 && ComputerMove < 0.9999) {
+    result = "Tails"
     }
 
   if (move === result) {
