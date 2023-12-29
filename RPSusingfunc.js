@@ -3,6 +3,7 @@
 let computerMove = '';
 function pickcomputerMove () {
   const randomnumber = Math.random();
+  
    
   if (randomnumber >= 0 && randomnumber <= 0.3 ) {
       computerMove = 'Rock';
@@ -22,10 +23,10 @@ function playgame(playermove) {
   const computermove = pickcomputerMove();
 
   if (playermove === "Rock") {
-    if (computerMove === "Rock") {
-    result = 'Tie';
+    if (computermove === "Rock") {
+      result = 'Tie';
     }
-    else if (computerMove === "Paper") {
+    else if (computermove === "Paper") {
       result = "You Lose";
     }
     else {
@@ -34,10 +35,10 @@ function playgame(playermove) {
     
   }
   else if (playermove === "Scissor") {
-    if (computerMove === "Rock") {
+    if (computermove === "Rock") {
       result = 'You Lose';
       }
-      else if (computerMove === "Paper") {
+      else if (computermove === "Paper") {
         result = "You Win";
       }
       else {
@@ -45,10 +46,10 @@ function playgame(playermove) {
       }
   }
   else {
-    if (computerMove === "Rock") {
+    if (computermove === "Rock") {
       result = 'You Lose';
       }
-      else if (computerMove === "Paper") {
+      else if (computermove === "Paper") {
         result = "Tie";
       }
       else {
