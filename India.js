@@ -23,13 +23,14 @@ function HT(move) {
 
   if (move === result) {
     console.log ('Your Guess was Right')
-    score.Wins = 1
+    score.Wins += 1
   }
   else {
     console.log ('Your guess Was Wrong')
-    score.Losses = 1
-  }
+    score.losses += 1
+    }
   console.log(score)
+  localStorage.setItem('scorekey', JSON.stringify(score))
 }
 
 let score = {
@@ -37,4 +38,6 @@ let score = {
   losses:0
 }
 
+let stored_data = JSON.parse (localStorage.getItem('scorekey'));
+console.log (stored_data);
 
