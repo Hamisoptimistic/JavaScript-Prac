@@ -79,6 +79,11 @@
       <button onclick="
         calculation = eval(calculation);
         console.log(calculation);
+
+        localStorage.setItem('calckey',JSON.stringify(calculation));
+        
+
+        
       ">=</button>
 
       <button onclick="
@@ -89,19 +94,34 @@
 
     <p>
       <button onclick="
-        calculation = '';
+        calculation = 0;
         console.log(calculation);
+        localStorage.setItem('calckey',JSON.stringify(calculation));
       ">Clear</button>
     </p>
+
+    <button onclick="
+    let storedvalue = '';
+    storedvalue = JSON.parse(localStorage.getItem('calckey'));
+
+    if (storedvalue !== null) {
+      console.log(storedvalue);
+      }
+      else {
+        console.log (storedvalue)
+      }
+      ">Last Stored Value</button>
    
     <script>
       let calculation = '';
 
       function updatecalc(value) {
-        calculation = calculation + value;
+        calculation = calculation + value
         console.log (calculation);
       }
-
+      
+      
+      
     </script>
   </body>
 </html>

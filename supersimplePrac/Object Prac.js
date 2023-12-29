@@ -32,3 +32,10 @@ console.log(comparePrice(product1, product2));
 
 console.log (product2.name.toUpperCase());
 console.log (product1.name.repeat(2));
+
+
+
+
+
+
+
