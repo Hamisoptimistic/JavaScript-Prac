@@ -67,7 +67,7 @@ function playgame(playermove) {
     score.Ties += 1;
   }
 
-  localStorage.setItem('score', JSON.stringify (score));
+  localStorage.setItem('scoreKey', JSON.stringify (score));
 
  
 
@@ -84,14 +84,14 @@ let score = {
   Ties:0
 }
 
-const savedScore = JSON.parse(localStorage.getItem('score'));
+const savedScore = JSON.parse(localStorage.getItem('scoreKey'));
 if (savedScore !== null) {
   score = savedScore;
 }
 
 
+console.log (savedScore);
 
-console.log (score);
 
 function resetscore () {
   score.Wins = 0;
