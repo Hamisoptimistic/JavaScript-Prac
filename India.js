@@ -3,7 +3,7 @@ let result = '';
 let ComputerMove = '';
 
 function HT(move) {
-ComputerMove = Math.random ();
+  ComputerMove = Math.random ();
 
   if (ComputerMove < 0.2) {
     result = 'Heads'
@@ -23,10 +23,18 @@ ComputerMove = Math.random ();
 
   if (move === result) {
     console.log ('Your Guess was Right')
+    score.Wins = 1
   }
   else {
     console.log ('Your guess Was Wrong')
+    score.Losses = 1
   }
-  console.log(ComputerMove)
+  console.log(score)
 }
+
+let score = {
+  Wins:0,
+  losses:0
+}
+
 
