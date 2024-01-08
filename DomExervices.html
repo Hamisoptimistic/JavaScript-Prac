@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM exervices</title>
+</head>
+<body>
+  <button onclick = "clickindicatorheads()" class = "button1">Heads</button>
+  <button onclick = "clickindicatortails()" class = "button2">Tails</button>
+  <p class = "result-text"></p>
+
+  <script>
+   
+    function clickindicatorheads () {
+        document.querySelector('.result-text').innerText = "You Chose Heads";
+    }
+    
+    function clickindicatortails () {
+      document.querySelector('.result-text').innerText = "You Chose Tails";
+    }
+  </script>
+</body>
+</html>
