@@ -7,10 +7,19 @@
 </head>
 <body>
   <p class = "Header">Youtube Subscribe Button</p>
-  <button class = "sub-button">Subscribe</button>
+  <button onclick="subscribe()" class = "sub-button">Subscribe</button>
 
   <script>
-    
+    function subscribe () {
+      let buttonElement = document.querySelector('.sub-button');
+
+      if (buttonElement.innerText === 'Subscribe') {
+        buttonElement.innerText = 'Subscribed';
+      }
+      else {
+        buttonElement.innerText = 'Subscribe';
+      }
+    }
   </script>
 </body>
 </html>
