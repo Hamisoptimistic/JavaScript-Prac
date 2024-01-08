@@ -1,8 +1,14 @@
-let a = 5;
+let n = 10;
 
-function sm() {
-  a = a+1;
-  return a;
-}
-let result = sm();
-console.log (result);
+function counterprob() {
+  i=0;
+  return function () {
+    console.log (n+i);
+    i = i+1;
+  }
+  
+};
+result = counterprob();
+result ();
+result ();
+

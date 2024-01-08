@@ -44,3 +44,4 @@ let score = {
 let stored_data = JSON.parse (localStorage.getItem('scorekey'));
 console.log (stored_data);
 
+

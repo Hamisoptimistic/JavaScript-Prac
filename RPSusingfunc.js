@@ -98,3 +98,4 @@ function resetscore () {
 
 if (savedScore !== null) {
   score = savedScore};
+
