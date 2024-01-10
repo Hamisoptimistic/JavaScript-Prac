@@ -9,7 +9,7 @@
   <button class = "Header" >Youtube Subscribe Button</button>
   <button onclick="subscribe()" class = "sub-button">Subscribe</button>
   <p>Amazon Shipping Calculator</p>
-  <input placeholder="Cost of Order" class="cost-input">
+  <input onkeyup = "keyup()" placeholder="Cost of Order" class="cost-input">
   <button onclick="CalculateTotal()">Calculate</button>
   <p class = "js-total-class"></p>  
 
@@ -36,9 +36,13 @@
       if (cost < 40) {
         cost = cost + 10;
       }
-      document.querySelector('.js-total-class').innerHTML = `Rs ${cost}`;
+      document.querySelector('.js-total-class').innerHTML = `Rs ${Math.ceil (cost)}`;
     }
 
+    function keyup() {
+      let inputValue= document.querySelector('.cost-input')
+      document.querySelector('.js-total-class').innerText = inputValue.value
+    }
   </script>
   </body>
 </html>

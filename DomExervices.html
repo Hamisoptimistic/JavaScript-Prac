@@ -32,9 +32,9 @@
         }
       }
  
-    function displayname (event) {
+    function displayname () {
       let inputElement = document.querySelector ('.input-val')
-      let inputValue = inputElement.value;
+      let inputValue = Number (inputElement.value);
 
       document.querySelector('.name-holder').innerHTML = `Your Name is ${inputValue}`
       let styling = document.querySelector('.name-holder')
