@@ -14,15 +14,16 @@
   <p class = "name-holder"></p>
 
   <script>
-   
+   let but1
     function clickindicatorheads () {
       document.querySelector('.result-text').innerText = "You Chose Heads";
       
-      let but1 = document.querySelector('.result-text'); // Use querySelector instead
+      but1 = document.querySelector('.result-text'); // Use querySelector instead
       but1.style.color = "red"; // Add 'px' to the fontSize value
     }
     function clickindicatortails () {
       document.querySelector('.result-text').innerText = "You Chose Tails";
+      but1.style.color = "red";
     }
 
     function eventKeyDown (event) {
