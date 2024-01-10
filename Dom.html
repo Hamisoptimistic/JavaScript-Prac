@@ -14,6 +14,7 @@
   <p class = "js-total-class"></p>  
 
   <script>
+
     function subscribe () {
 
       let buttonElement = document.querySelector('.sub-button');
@@ -35,14 +36,21 @@
 
       if (cost < 40) {
         cost = cost + 10;
+        
       }
       document.querySelector('.js-total-class').innerHTML = `Rs ${Math.ceil (cost)}`;
     }
 
     function keyup() {
-      let inputValue= document.querySelector('.cost-input')
+      inputValue = document.querySelector('.cost-input')
       document.querySelector('.js-total-class').innerText = inputValue.value
+
+      let idnia = document.querySelector('.js-total-class');
+      idnia.style.color = "red";
     }
+
+
+
   </script>
   </body>
 </html>
