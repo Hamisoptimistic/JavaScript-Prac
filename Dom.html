@@ -32,7 +32,7 @@
       let inputElement = document.querySelector('.cost-input');
       console.log (inputElement);
     
-      let cost = Number (inputElement.value);
+      let cost = (inputElement.value);
 
       if (cost < 40) {
         cost = cost + 10;
@@ -42,11 +42,13 @@
     }
 
     function keyup() {
-      inputValue = document.querySelector('.cost-input')
+      let inputValue = document.querySelector('.cost-input')
+      // console.log (inputValue);
       document.querySelector('.js-total-class').innerText = inputValue.value
 
       let keyupvalue = document.querySelector('.js-total-class');
       keyupvalue.style.color = "red";
+  
     }
 
 
