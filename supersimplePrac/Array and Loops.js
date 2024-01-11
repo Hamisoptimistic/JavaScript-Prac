@@ -31,14 +31,14 @@
   // } 
 
 
-const todoList = [
-  "Make Dininer",
-  "Watch youtube",
-  "Sleep"
-];
+// const todoList = [
+//   "Make Dinner",
+//   "Watch youtube",
+//   "Sleep"
+// ];
 
-for (i = 0; i <= todoList.length - 1; i++) {
-  let result = todoList[i]
-  console.log(result);
-}
+// for (i = 0; i <= todoList.length - 1; i++) {
+//   let result = todoList[i]
+//   console.log(result);
+// } 
 
