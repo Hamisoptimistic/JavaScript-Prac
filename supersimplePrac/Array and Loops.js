@@ -1,0 +1,33 @@
+
+// myarray = [1,2,4,6,2,5]
+
+// myarray.push (123);
+// myarray.splice (4,1);
+// myarray.push (8);
+
+// console.log (myarray);
+
+
+// let index = 1;
+
+// while (index <= 10) {
+//   console.log (index);
+//   index++;
+// }
+
+// for (let i = 1; i < 6; i++) {
+//   console.log(i);
+// }
+
+
+
+function num_under_5 () {
+  let randomNum = 0;
+  
+  while (randomNum < 0.5) {
+  randomNum = Math.random();
+  console.log(randomNum);
+  } 
+}
+num_under_5()
+
