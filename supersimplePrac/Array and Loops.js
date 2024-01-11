@@ -31,6 +31,14 @@
   // } 
 
 
+const todoList = [
+  "Make Dininer",
+  "Watch youtube",
+  "Sleep"
+];
 
-
+for (i = 0; i <= todoList.length - 1; i++) {
+  let result = todoList[i]
+  console.log(result);
+}
 
