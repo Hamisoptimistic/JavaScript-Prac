@@ -42,3 +42,23 @@
 //   console.log(result);
 // } 
 
+
+let Numbers = [1,2,6];
+let totalNum = 0;
+
+for (let i = 0; i < Numbers.length; i++) {
+  currentNum = Numbers[i];
+  totalNum = totalNum + currentNum
+  // console.log (totalNum);
+}
+// console.log (totalNum);
+
+// double the values in Array
+let NumDoubled = [];
+
+for (let i = 0; i < Numbers.length; i++) {
+  let num = Numbers[i];
+  NumDoubled.push(num * 2);
+  
+}
+console.log (NumDoubled)
