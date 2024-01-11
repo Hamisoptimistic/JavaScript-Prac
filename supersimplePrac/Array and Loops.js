@@ -21,13 +21,16 @@
 
 
 
-function num_under_5 () {
-  let randomNum = 0;
+
+  // let randomNum = 0;
+
+  // while (randomNum < 0.5) {
+  // randomNum = Math.random();
+  // console.log(randomNum);
   
-  while (randomNum < 0.5) {
-  randomNum = Math.random();
-  console.log(randomNum);
-  } 
-}
-num_under_5()
+  // } 
+
+
+
+
 
