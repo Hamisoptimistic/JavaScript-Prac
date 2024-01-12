@@ -12,4 +12,24 @@
 //   i+= 2;
 // }
 
-// 
+// 3. for loop that count form 5 to 0
+
+// for (let i = 5; i > -1; i = i - 1) {
+//   console.log (i);
+// }
+
+// let i = 5;
+// while (i > -1) {
+//   console.log(i);
+//   i = i - 1; 
+// };
+
+// 4. Create a loop that takes an array of numbers and creates a new array where each number is increased   by    • [1, 2, 3] => [2, 3, 4]
+
+
+
+
+
+
+
+
