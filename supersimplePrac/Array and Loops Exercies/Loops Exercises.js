@@ -24,12 +24,22 @@
 //   i = i - 1; 
 // };
 
-// 4. Create a loop that takes an array of numbers and creates a new array where each number is increased   by    • [1, 2, 3] => [2, 3, 4]
+// 4. Create a loop that takes an array of numbers and creates a new array where each number is increased   by 1   • [1, 2, 3] => [2, 3, 4]
 
 
 
+let array = [1,2,3,4,5,6,7,8,9,10]
+let newArray = [];
 
+for (i = 0; i < array.length; i++) {
+  let value = array[i];
+  let result = value + 1;
 
+  newArray.push(result);
+  
+}
+
+console.log(newArray);
 
 
 
