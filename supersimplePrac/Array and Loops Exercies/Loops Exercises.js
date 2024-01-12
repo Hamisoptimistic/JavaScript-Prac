@@ -59,20 +59,31 @@
 
 
 /// 6. same but with extra parameter
-function addOne(array,num) {
+// function addOne(array,num) {
+//   let newArray = [];
+
+//   for (i = 0; i < array.length; i++) {
+//     let value = array[i];
+//     let result = value + num;
+
+//     newArray.push(result);
+//   }
+//   return newArray;
+// }
+
+// console.log (addOne([1,2,3], 5))
+
+let newArray = [1,2,3,4,5,6]
+
+function twicesum (array) {
   let newArray = [];
 
-  for (i = 0; i < array.length; i++) {
-    let value = array[i];
-    let result = value + num;
-
+  for (i = 0; i < array.length; i = i + 2) {
+    let result = array[i] + array[i+1];
     newArray.push(result);
   }
   return newArray;
 }
 
-console.log (addOne([1,2,3], 5))
-
-
-
+console.log (twicesum(newArray));
 
