@@ -28,18 +28,35 @@
 
 
 
-let array = [1,2,3,4,5,6,7,8,9,10]
-let newArray = [];
+// let array = [1,2,3,4,5,6,7,8,9,10]
+// let newArray = [];
 
-for (i = 0; i < array.length; i++) {
-  let value = array[i];
-  let result = value + 1;
+// for (i = 0; i < array.length; i++) {
+//   let value = array[i];
+//   let result = value + 1;
 
-  newArray.push(result);
+//   newArray.push(result);
   
+// }
+
+// console.log(newArray);
+
+// Create a function addOne(array) that takes an array of numbers and returns an array where each number is increased by 1. • addOne([1, 2, 3]) => [2, 3, 4] • addOne([-2, -1, 0, 99]) => [-1, 0, 1, 100]
+
+function addOne(array) {
+  let newArray = [];
+
+  for (i = 0; i < array.length; i++) {
+    let value = array[i];
+    let result = value + 1;
+
+    newArray.push(result);
+  }
+  return newArray;
 }
 
-console.log(newArray);
+console.log (addOne([-2,-1,0]))
+
 
 
 
