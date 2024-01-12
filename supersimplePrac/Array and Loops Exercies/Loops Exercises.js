@@ -41,21 +41,37 @@
 
 // console.log(newArray);
 
-// Create a function addOne(array) that takes an array of numbers and returns an array where each number is increased by 1. • addOne([1, 2, 3]) => [2, 3, 4] • addOne([-2, -1, 0, 99]) => [-1, 0, 1, 100]
+//5. Create a function addOne(array) that takes an array of numbers and returns an array where each number is increased by 1. • addOne([1, 2, 3]) => [2, 3, 4] • addOne([-2, -1, 0, 99]) => [-1, 0, 1, 100]
 
-function addOne(array) {
+// function addOne(array) {
+//   let newArray = [];
+
+//   for (i = 0; i < array.length; i++) {
+//     let value = array[i];
+//     let result = value + 1;
+
+//     newArray.push(result);
+//   }
+//   return newArray;
+// }
+
+// console.log (addOne([-2,-1,0]))
+
+
+/// 6. same but with extra parameter
+function addOne(array,num) {
   let newArray = [];
 
   for (i = 0; i < array.length; i++) {
     let value = array[i];
-    let result = value + 1;
+    let result = value + num;
 
     newArray.push(result);
   }
   return newArray;
 }
 
-console.log (addOne([-2,-1,0]))
+console.log (addOne([1,2,3], 5))
 
 
 
