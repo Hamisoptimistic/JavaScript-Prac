@@ -51,14 +51,15 @@ for (let i = 0; i < Numbers.length; i++) {
   totalNum = totalNum + currentNum
   // console.log (totalNum);
 }
-// console.log (totalNum);
+console.log (totalNum);
 
-// double the values in Array
-let NumDoubled = [];
 
-for (let i = 0; i < Numbers.length; i++) {
-  let num = Numbers[i];
-  NumDoubled.push(num * 2);
+// // double the values in Array
+// let NumDoubled = [];
+
+// for (let i = 0; i < Numbers.length; i++) {
+//   let num = Numbers[i];
+//   NumDoubled.push(num * 2);
   
-}
-console.log (NumDoubled)
+// }
+// console.log (NumDoubled)
