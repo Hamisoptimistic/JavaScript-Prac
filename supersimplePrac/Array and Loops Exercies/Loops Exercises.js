@@ -61,11 +61,11 @@
 /// 6. same but with extra parameter
 // function addOne(array,num) {
 //   let newArray = [];
-
+  
 //   for (i = 0; i < array.length; i++) {
 //     let value = array[i];
 //     let result = value + num;
-
+    
 //     newArray.push(result);
 //   }
 //   return newArray;
@@ -73,17 +73,51 @@
 
 // console.log (addOne([1,2,3], 5))
 
-let newArray = [1,2,3,4,5,6]
+// 7. add 1st and 2nd element in an Array and then add 3rd and 4th element
+// let newArray = [1,2,3,4,5,6]
 
-function twicesum (array) {
-  let newArray = [];
+// function twicesum (array) {
+//   let newArray = [];
+  
+//   for (i = 0; i < array.length; i = i + 2) {
+//     let result = array[i] + array[i+1];
+//     newArray.push(result);
+//   }
+//   return newArray;
+// }
 
-  for (i = 0; i < array.length; i = i + 2) {
-    let result = array[i] + array[i+1];
-    newArray.push(result);
+// console.log (twicesum(newArray));
+
+//8. add 2 arrays simple
+
+
+
+// function add2array(array1,array2) {
+//   let sumarray = [];
+
+//   for (let i = 0; i<array1.length; i++) {
+//     sumarray[i] =array1[i] + array2[i];
+//   }
+//   return sumarray;
+// }
+
+// console.log (add2array([1,2,3],[1,2,3]));
+
+// 9. takes and array and finds how many numbers are greater than zero
+
+function greaterThanZero(array) {
+  let starray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      // starray = starray + 1;
+      starray.push(array[i])
+    }
   }
-  return newArray;
+  let arraylen = starray.length;
+  console.log (arraylen)
+  return starray;
 }
+console.log (greaterThanZero ([1,2,-3,1,2,3]));
 
-console.log (twicesum(newArray));
+
 
