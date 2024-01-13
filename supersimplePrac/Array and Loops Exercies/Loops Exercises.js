@@ -105,19 +105,37 @@
 
 // 9. takes and array and finds how many numbers are greater than zero
 
-function greaterThanZero(array) {
-  let starray = [];
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] > 0) {
-      // starray = starray + 1;
-      starray.push(array[i])
+// function greaterThanZero(array) {
+//   let starray = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] > 0) {
+//       // starray = starray + 1;
+//       starray.push(array[i])
+//     }
+//   }
+//   let arraylen = starray.length;
+//   console.log (arraylen)
+//   return starray;
+// }
+// console.log (greaterThanZero ([1,2,-3,1,2,3]));
+
+// 10. find max and min in an array
+
+function minMax(array) {
+  // let max = 0;
+  // let min = 0;
+  let result = {Maxval:0,Minval:0};
+  for (i = 0; i < array.length; i++) {
+    if (array[i] > result.Maxval) {
+      result.Maxval = array[i];
+    }
+    else if (array[i] < result.Minval) {
+      result.Minval = array[i];
     }
   }
-  let arraylen = starray.length;
-  console.log (arraylen)
-  return starray;
+  return result;
+  
 }
-console.log (greaterThanZero ([1,2,-3,1,2,3]));
+console.log (minMax([1,2,-3,-4,50000]))
 
-
-
+  
