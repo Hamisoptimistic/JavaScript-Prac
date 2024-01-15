@@ -153,5 +153,17 @@
 // ________________________________________________________________________________________________________
 // Array and Loops part-2 exercises
 
-// 1.Create an array of strings, loop over the array, and check if the string 'search' is inside the array.   If it is, console.log() the index of 'search' in in the array. If not, console.log '-1'. •  ['hello', 'world', 'search', 'good'] => console.log(2)
+// 1.Create an array of strings, loop over the array, and check if the string 'search' is inside the array. If it is, console.log() the index of 'search' in in the array. If not, console.log '-1'. •  ['hello', 'world', 'search', 'good'] => console.log(2)
 
+function searchstr(array) {
+  let index = -1;
+  for (i = 0; i < array.length; i++){
+    if (array[i] === 'search') {
+      index = i;
+    }
+    
+  }
+  console.log(index);
+}
+
+searchstr(['india','india','Hanun','search']);
