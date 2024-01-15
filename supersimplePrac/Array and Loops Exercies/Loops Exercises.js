@@ -172,20 +172,36 @@
 // searchstr(['india','india','Hanun','search','search']);
 
 
-// Create a function findIndex(array, word) that searches an array for a string (in the 'word' parameter) and returns the index of the first appearance of the string. If it doesn't exist in the array, return -1. findIndex(['green', 'red', 'blue', 'red'], 'red') => 1 ●
+// 2. Create a function findIndex(array, word) that searches an array for a string (in the 'word' parameter) and returns the index of the first appearance of the string. If it doesn't exist in the array, return -1. findIndex(['green', 'red', 'blue', 'red'], 'red') => 1 ●
 
-function findIndex(array, word) {
-  let index = -1;
-  for (i = 0; i < array.length; i++) {
-    if (array[i] === word) {
-      index = i;
-    }
-    else {
-      index = 'doesnt exist'
-    }
+// function findIndex(array, word) {
+//   let index = -1;
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i] === word) {
+//       index = i;
+//     }
+//     else {
+//       index = 'doesnt exist'
+//     }
+//   }
+//   return index;
+
+// }
+
+// console.log (findIndex(['red','green','blue'], 'white'));
+
+// 3. Create a function removeEgg (foods) that takes an array of strings and returns an array where the string 'egg' is removed. (Hint : loop through the array and check if each string is 'egg'. If it is 'egg', use 'continue;' to skip it. If it's not 'egg', add it to the result). removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'ham']
+
+
+function removeEggs (foods) {
+  result_array = [];
+  for (i = 0; i< foods.length; i++) {
+    if (foods[i] === 'egg') {
+      continue;
+    } 
+    result_array.push (foods[i]);
   }
-  return index;
-
+  return result_array;
 }
 
-console.log (findIndex(['red','green','blue'], 'white'));
+console.log (removeEggs(['egg', 'apple', 'egg', 'egg', 'ham']));
