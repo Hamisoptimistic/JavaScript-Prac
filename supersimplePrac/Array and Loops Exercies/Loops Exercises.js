@@ -193,17 +193,38 @@
 // 3. Create a function removeEgg (foods) that takes an array of strings and returns an array where the string 'egg' is removed. (Hint : loop through the array and check if each string is 'egg'. If it is 'egg', use 'continue;' to skip it. If it's not 'egg', add it to the result). removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'ham']
 
 
+// function removeEggs (foods) {
+//   let result_array = [];
+//   for (let i = 0; i< foods.length; i++) {
+//     if (foods[i] === 'egg') {
+//       continue;
+//     } 
+//     result_array.push (foods[i]);
+//   }
+//   return result_array;
+// }
+
+// console.log (removeEggs(['egg', 'apple', 'egg', 'egg', 'ham']));
+
+// 4. same but Only remove 2 eggs and create a new array this time.
+
 function removeEggs (foods) {
+  let foodscopy = foods.slice().reverse()
+  // let reversedfood = foodscopy.reverse();
   let result_array = [];
-  let eggsremoved = 0;
-  for (let i = 0; i< foods.length; i++) {
-    if (foods[i] === 'egg' && eggsremoved < 2) {
-      eggsremoved++;
+  let removedEggs = 0;
+
+  for (let i = 0; i< foodscopy.length; i++) {
+  if (foodscopy[i] === 'egg' && removedEggs < 2) {
+      removedEggs++;
       continue;
     } 
-    result_array.push (foods[i]);
+    result_array.push (foodscopy[i]);
   }
-  return result_array;
+  console.log (foods);
+  return result_array.reverse();
 }
 
-console.log (removeEggs(['apple', 'egg', 'egg', 'ham']));
+console.log (removeEggs(['egg', 'apple', 'egg', 'egg', 'ham']));
+
+// Remove the last 2 eggs
