@@ -43,19 +43,21 @@ for (i = 0; i <= todoList.length - 1; i++) {
 } 
 
 
-let Numbers = [1,2,6];
-let totalNum = 0;
+// let Numbers = [1,2,6];
+// let totalNum = 0;
 
-for (let i = 0; i < Numbers.length; i++) {
-  currentNum = Numbers[i];
-  totalNum = totalNum + currentNum;
-  // console.log (totalNum);
-}
-console.log (totalNum); 
+// for (let i = 0; i < Numbers.length; i++) {
+//   currentNum = Numbers[i];
+//   totalNum = totalNum + currentNum;
+//   // console.log (totalNum);
+// }
+// console.log (totalNum); 
 
 
 // double the values in Array
+let Numbers = [1,2,6];
 let NumDoubled = [];
+
 
 for (let i = 0; i < Numbers.length; i++) {
   let num = Numbers[i];

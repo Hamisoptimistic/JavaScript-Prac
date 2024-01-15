@@ -42,7 +42,7 @@
 
 // console.log(newArray);
 
-//5. Create a function addOne(array) that takes an array of numbers and returns an array where each number is increased by 1. • addOne([1, 2, 3]) => [2, 3, 4] • addOne([-2, -1, 0, 99]) => [-1, 0, 1, 100]
+//5. Create a function adEne(array) that takes an array of numbers and returns an array where each number is increased by 1. • addOne([1, 2, 3]) => [2, 3, 4] • addOne([-2, -1, 0, 99]) => [-1, 0, 1, 100]
 
 // function addOne(array) {
 //   let newArray = [];
@@ -190,7 +190,7 @@
 
 // console.log (findIndex(['red','green','blue'], 'white'));
 
-// 3. Create a function removeEgg (foods) that takes an array of strings and returns an array where the string 'egg' is removed. (Hint : loop through the array and check if each string is 'egg'. If it is 'egg', use 'continue;' to skip it. If it's not 'egg', add it to the result). removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'ham']
+// 3. Create a function removeEgg (foods) that takes an array of strings and returns an array where the string 'egg' is removed. (Hint : loop through the array and check if each string is 'egg'. If it is 'egg', use 'continue;' to skip it.If it's not 'egg', add it to the result). removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'ham']
 
 
 // function removeEggs (foods) {
