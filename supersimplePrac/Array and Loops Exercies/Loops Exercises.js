@@ -140,12 +140,18 @@
 // console.log (minMax([3,10,-1,-5]));
 // console.log (typeof minMax([3,-1]));
 
-// Break statement
+// Break statement and continue statement
 
-let arr = [1,2,3,4,5,6,7]
-for (i = 0; i < 10; i++) {
-  if (i === 6) {
-    break
-  }
-  console.log (i);
-}
+
+// for (i = 1; i < 10; i++) {
+//   if (i === 6) {
+//     continue
+//   }
+//   console.log (i);
+// }
+
+// ________________________________________________________________________________________________________
+// Array and Loops part-2 exercises
+
+// 1.Create an array of strings, loop over the array, and check if the string 'search' is inside the array.   If it is, console.log() the index of 'search' in in the array. If not, console.log '-1'. •  ['hello', 'world', 'search', 'good'] => console.log(2)
+
