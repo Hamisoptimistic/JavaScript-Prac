@@ -194,9 +194,11 @@
 
 
 function removeEggs (foods) {
-  result_array = [];
-  for (i = 0; i< foods.length; i++) {
-    if (foods[i] === 'egg') {
+  let result_array = [];
+  let eggsremoved = 0;
+  for (let i = 0; i< foods.length; i++) {
+    if (foods[i] === 'egg' && eggsremoved < 2) {
+      eggsremoved++;
       continue;
     } 
     result_array.push (foods[i]);
@@ -204,4 +206,4 @@ function removeEggs (foods) {
   return result_array;
 }
 
-console.log (removeEggs(['egg', 'apple', 'egg', 'egg', 'ham']));
+console.log (removeEggs(['apple', 'egg', 'egg', 'ham']));
