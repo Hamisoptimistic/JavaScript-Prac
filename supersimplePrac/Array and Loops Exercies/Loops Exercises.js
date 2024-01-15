@@ -18,6 +18,7 @@
 //   console.log (i);
 // }
 
+// same using While Loop
 // let i = 5;
 // while (i > -1) {
 //   console.log(i);
@@ -58,7 +59,7 @@
 // console.log (addOne([-2,-1,0]))
 
 
-/// 6. same but with extra parameter
+/// 6. same but with extra parameter (num parameter is how much u wanna add)
 // function addOne(array,num) {
 //   let newArray = [];
   
@@ -121,21 +122,30 @@
 
 // 10. find max and min in an array
 
-function minMax(array) {
-  // let max = 0;
-  // let min = 0;
-  let result = {Maxval:0,Minval:0};
-  for (i = 0; i < array.length; i++) {
-    if (array[i] > result.Maxval) {
-      result.Maxval = array[i];
-    }
-    else if (array[i] < result.Minval) {
-      result.Minval = array[i];
-    }
-  }
-  return result;
+// function minMax(array) {
+//   // let max = 0;
+//   // let min = 0;
+//   let result = {Maxval:0,Minval:0};
+//   for (i = 0; i < array.length; i++) {
+//     if (array[i] > result.Maxval) {
+//       result.Maxval = array[i];
+//     }
+//     else if (array[i] < result.Minval) {
+//       result.Minval = array[i];
+//     }
+//   }
+//   return result;
   
-}
-console.log (minMax([1,2,-3,-4,50000]))
+// }
+// console.log (minMax([3,10,-1,-5]));
+// console.log (typeof minMax([3,-1]));
 
-  
+// Break statement
+
+let arr = [1,2,3,4,5,6,7]
+for (i = 0; i < 10; i++) {
+  if (i === 6) {
+    break
+  }
+  console.log (i);
+}
