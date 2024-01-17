@@ -213,7 +213,7 @@ function removeEggs (foods) {
   // let reversedfood = foodscopy.reverse();
   let result_array = [];
   let removedEggs = 0;
-
+  
   for (let i = 0; i< foodscopy.length; i++) {
   if (foodscopy[i] === 'egg' && removedEggs < 2) {
       removedEggs++;

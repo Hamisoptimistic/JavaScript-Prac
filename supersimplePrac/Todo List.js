@@ -1,7 +1,19 @@
 let arrayresult = ['Hamim'];
 
-renderTodoList();
+// renderTodoList();
+// 1st
 
+function todoList() {
+  let inputValue= document.querySelector('.input')
+  
+  let inputresult = inputValue.value;
+  arrayresult.push(inputresult);
+  console.log (arrayresult)
+  
+  renderTodoList();
+}
+
+// 2nd
 
 function renderTodoList () {
   let generateHTMLtags = '';
@@ -19,13 +31,4 @@ function renderTodoList () {
 
 
 
-function todoList() {
-  let inputValue= document.querySelector('.input')
-  
-  let inputresult = inputValue.value;
-  arrayresult.push(inputresult);
-  console.log (arrayresult)
-  
-  renderTodoList();
-}
 
