@@ -25,7 +25,7 @@ function renderTodoList () {
     console.log (generateHTMLtags);
   }
 
-  document.querySelector('.output').innerHTML = generateHTMLtags;
+  document.querySelector('.output').innerHTML = generateHTMLtags; 
 }
 
 
