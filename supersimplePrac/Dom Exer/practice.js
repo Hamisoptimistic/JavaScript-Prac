@@ -11,12 +11,17 @@ console.log (buttonValue);
 
 function addtoCart() {
 
-  let cartbutton = document.querySelector('.cartbutton').innerHtml
-  console.log (cartbutton);
+  let cartbutton = document.querySelector('.cart-button').innerText
+  let messagevalue = document.querySelector('.message')
+  messagevalue.innerHTML = 'Added NOW';
 
   setTimeout (function() {
     if (cartbutton === "Add to Cart") {
-      document.querySelector('.CartButton').innerHTML = "Added"
+      document.querySelector('.cart-button').innerHTML = "Added"
     }
-  },1000)
+  },)
+
+  setTimeout (function() {
+    messagevalue.innerHTML = ''
+  },2000)
 };
