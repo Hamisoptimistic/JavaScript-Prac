@@ -33,9 +33,6 @@ setInterval (function () {
   // } else {
   //   // document.title = "Practice";
   // }
+ 
 },1000)
 
-function addremove() {
-  message++
-  message--
-}
