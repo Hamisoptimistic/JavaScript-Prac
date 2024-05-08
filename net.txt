@@ -1,0 +1,5 @@
+1. Create a simple adhoc network.
+  1. Omnetpp in cmd
+  2. go to Inet/examples/adhoc/idealwireless/.ned and Omnetpp
+  3. Click Run
+  4. increase Host > File/setup configuration/select last and Enter no. of Host
