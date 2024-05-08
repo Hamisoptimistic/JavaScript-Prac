@@ -23,5 +23,10 @@
   3. omnetppi.ini/parameters/ ADD-MobilitySpeed = 400mps
   4. Run the simulation
 
-6.Mobile Adhoc using directional antennas
-  1.
+6.Mobile Adhoc using directional antennas (Omnet)
+  1.omnetpp in cmd
+  2. Inet/showcases/wireless/directionalantennas
+  3. Run .ned and .ini and go to Parameters.
+  4.RUN with Axially Symmetric Antennas
+
+7. Implement Wireless network simulation (Cisco)
