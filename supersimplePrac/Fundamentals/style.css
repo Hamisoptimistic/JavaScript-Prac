@@ -2,6 +2,13 @@
     background-color: rgb(90, 238, 238);
 }
 
+.img{
+    display: block;
+    margin:0 auto;
+    
+}
 .header{
     font-family:"Poppins";
+    text-align: center;
 }
+
