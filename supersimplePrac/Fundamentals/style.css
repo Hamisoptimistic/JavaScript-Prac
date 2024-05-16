@@ -22,5 +22,14 @@
     font-family:"Poppins";
     text-align: center;
     color:blueviolet;
+    animation: fade-in red 1s;
 }
 
+.input{
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.input:hover {
+    transform: scale(1.5);
+}
