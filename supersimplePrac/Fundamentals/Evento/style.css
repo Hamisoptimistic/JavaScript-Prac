@@ -86,13 +86,11 @@ body{
 }
 .Heading-text{
     position: absolute;
-    color:rgb(162, 161, 164);
+    color:rgb(247, 243, 255);
     margin-top: 80px;
     margin-left: 30px;
     font-size: 30px;
     opacity: 80%;
-
-
 }
 .h2-hamb{
     margin-top:10px;
@@ -105,23 +103,23 @@ body{
     font-family: Poetsen One;
     margin-bottom:0;
     padding-bottom: 0;
-    
 }
 .contact-btn{
     font-size: 25px;
     border-radius: 7px;
-    border:solid 2px rgb(228, 183, 101);
-    background-color: black;
-    color:rgb(162, 161, 164);
-    box-shadow: rgba(233, 233, 233, 0.35) 0px 5px 15px;;
+    border:dashed 1.9px burlywood;
+    background-color: rgb(128, 116, 196);
+    color:rgb(255, 255, 255);
+    box-shadow: rgba(131, 131, 131, 0.35) 0px 5px 15px;;
     font-family: Noto Sans;
     transition: ease-in .15s;
     margin-top:13px;
-    padding:0px 8px 2px 8px
+    padding:0px 8px 2px 8px;
+    background-blend-mode: lighten;
 }
 .contact-btn:hover{
     transform: scale(1.2);
-    color:rgb(235, 112, 119);
+    /* color:rgb(235, 112, 119); */
     /* background-color:rgb(0, 78, 93); */
 }
 
@@ -130,5 +128,10 @@ body{
    height:80vh;
    display: block;
    width: 100%;
-   /* object-fit: */
+   object-fit:fill;
 }
+
+
+
+
+
