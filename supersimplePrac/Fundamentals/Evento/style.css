@@ -106,6 +106,7 @@ body{
 }
 .contact-btn{
     font-size: 25px;
+    font-weight: 500;
     border-radius: 7px;
     border:dashed 1.9px burlywood;
     background-color: rgb(128, 116, 196);
@@ -133,9 +134,9 @@ body{
 
 .main-about{
     color:rgb(255, 255, 255);
-    font-family: Bitter;
+    font-family: Comfortaa;
     font-size: 30px;
-    
+
 }
 
 
