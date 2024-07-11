@@ -3,7 +3,5 @@
 let myname = "Hamim"
 let myfav = 69;
 
+console.log(myfav);
 console.log(myname);
-console.log(typeof 87);
-
-
