@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <button class = "Header" >Youtube Subscribe Button</button>
+  <button onclick="subscribe()" class = "sub-button">Subscribe</button>
+  <p>Amazon Shipping Calculator</p>
+  <input onkeyup = "keyup()" placeholder="Cost of Order" class="cost-input">
+  <button onclick="CalculateTotal()">Calculate</button>
+  <p class = "js-total-class"></p>  
+
+  <script>
+
+    function subscribe () {
+
+      let buttonElement = document.querySelector('.sub-button');
+
+      if (buttonElement.innerText === 'Subscribe') {
+        buttonElement.innerText = 'Subscribed';
+      }
+      else {
+        buttonElement.innerText = 'Subscribe';
+      }
+    }
+   
+    
+    function CalculateTotal () {
+      let inputElement = document.querySelector('.cost-input');
+      console.log (inputElement);
+    
+      let cost = (inputElement.value);
+
+      if (cost < 40) {
+        cost = cost + 10;
+        
+      }
+      document.querySelector('.js-total-class').innerHTML = `Rs ${Math.ceil (cost)}`;
+    }
+
+    function keyup() {
+      let inputValue = document.querySelector('.cost-input')
+      // console.log (inputValue);
+      document.querySelector('.js-total-class').innerText = inputValue.value
+
+      let keyupvalue = document.querySelector('.js-total-class');
+      keyupvalue.style.color = "red";
+  
+    }
+
+
+
+  </script>
+  </body>
+</html>

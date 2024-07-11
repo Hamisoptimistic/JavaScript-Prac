@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM exervices</title>
+</head>
+<body>
+  <button onclick = "clickindicatorheads()" class = "button1" >Heads </button>
+  <button onclick = "clickindicatortails()" class = "button2" >Tails </button>
+  <p class = "result-text"></p>
+  <input onkeydown = "eventKeyDown(event)" placeholder="Name" class = "input-val">
+  <button  class = "sub-button" onclick = "displayname()" >Submit </button>
+  <p class = "name-holder"></p>
+
+  <script>
+    function clickindicatorheads () {
+      document.querySelector('.result-text').innerText = "You Chose Heads";
+      
+      but1 = document.querySelector('.result-text'); // Use querySelector instead
+      but1.sytle.color = "red"; // Add 'px' to the fontSize value
+    }
+    
+    function clickindicatortails () {
+      document.querySelector('.result-text').innerText = "You Chose Tails";
+      but1.style.color = "red";
+    }
+
+    function eventKeyDown (event) {
+        if (event.key === "Enter") {
+          displayname();
+        }
+      }
+ 
+    function displayname () {
+      let inputElement = document.querySelector ('.input-val')
+      let inputValue = Number (inputElement.value);
+
+      document.querySelector('.name-holder').innerHTML = `Your Name is ${inputValue}`
+      let styling = document.querySelector('.name-holder')
+      styling.style.backgroundColor = "lightblue"
+    }
+
+    
+  </script>
+</body>
+</html>
