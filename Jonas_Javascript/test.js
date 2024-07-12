@@ -14,4 +14,6 @@ console.log(typeof var1);
 
 const birthYear = 2000;
 console.log(birthYear);
-birthYear = 2001;
+
+let description = `what the fuck is this ${birthYear}`
+console.log(description);
