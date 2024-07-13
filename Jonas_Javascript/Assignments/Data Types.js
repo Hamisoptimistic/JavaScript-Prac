@@ -11,3 +11,8 @@ console.log('x')
 
 let test = 6 < 2;
 console.log(typeof test)
+
+let va1 = null
+console.log(va1)
+
+console.log(10 + 1.1)
