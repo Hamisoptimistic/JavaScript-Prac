@@ -9,3 +9,7 @@ let population = 1.4
 console.log(country);
 console.log(continent);
 console.log(population);
+
+const tempstr = `This is kinda crazy that ${country} has ${population} billion population`
+
+console.log(tempstr);
