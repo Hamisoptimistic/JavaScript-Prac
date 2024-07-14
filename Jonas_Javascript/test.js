@@ -34,5 +34,12 @@
 
 // type conversion and coercion
 
-console.log(5 - '2')
-console.log('44' - '5')
+// console.log(5 - '2')
+// console.log(44 / '5')
+
+// const bool = (Boolean({}))
+// console.log(bool);
+
+let var1 = 'Hamim';
+
+(var1) ? console.log('its truthy value') : console.log('its a falsy value ')
