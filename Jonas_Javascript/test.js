@@ -35,3 +35,4 @@
 // type conversion and coercion
 
 console.log(5 - '2')
+console.log('44' - '5')
