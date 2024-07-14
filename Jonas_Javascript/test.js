@@ -26,10 +26,12 @@
 //------------------------------------------------------//
 
 
-let userInput = 'EcmaScrsipt';
+// let userInput = 'EcmaScrsipt';
 
-let result = (userInput == 'EcmaScript') ? 'correct' : 'idiot';
+// let result = (userInput == 'EcmaScript') ? 'correct' : 'idiot';
 
-console.log(result);
+// console.log(result);
 
+// type conversion and coercion
 
+console.log(5 - '2')
