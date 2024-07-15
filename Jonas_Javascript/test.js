@@ -40,6 +40,14 @@
 // const bool = (Boolean({}))
 // console.log(bool);
 
-let var1 = 'Hamim';
+// truthy and falsy value
+// let var1 = 'Hamim';
 
-(var1) ? console.log('its truthy value') : console.log('its a falsy value ')
+// (var1) ? console.log('its truthy value') : console.log('its a falsy value ');
+
+// console.log(5 + 6 + '4' + 9 - 4 - 2);
+//------------------------------------------------------------------------------------------------//
+// prefix and postfix
+let a = 1;
+++a
+console.log(a);
