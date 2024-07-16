@@ -48,6 +48,34 @@
 // console.log(5 + 6 + '4' + 9 - 4 - 2);
 //------------------------------------------------------------------------------------------------//
 // prefix and postfix
-let a = 1;
-++a
-console.log(a);
+// let a = 1;
+// ++a
+// console.log(a);
+
+// switch statement.
+//1. Using if-else first.
+
+const day = "Saturday";
+const di = "Friday"
+
+// if (day === "Monday") {
+//     console.log("a");
+// } else if (day === "Tuesday" || day === "Wednesday") {
+//     console.log("b");
+// }
+
+// 2. using switch statement.
+
+switch (day) {
+    case "Monday":
+        console.log("its Monday today")
+        break;
+    case "Tuesday":
+    case "Wednesday":
+        console.log("Its Tuesday Today")
+        break;
+    default:
+        console.log("enter valid day")
+}
+
+
