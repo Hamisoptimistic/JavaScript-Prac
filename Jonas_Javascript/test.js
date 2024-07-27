@@ -66,16 +66,59 @@ const di = "Friday"
 
 // 2. using switch statement.
 
-switch (day) {
-    case "Monday":
-        console.log("its Monday today")
-        break;
-    case "Tuesday":
-    case "Wednesday":
-        console.log("Its Tuesday Today")
-        break;
-    default:
-        console.log("enter valid day")
-}
+// switch (day) {
+//     case "Monday":
+//         console.log("its Monday today")
+//         break;
+//     case "Tuesday":
+//     case "Wednesday":
+//         console.log("Its Tuesday Today")
+//         break;
+//     default:
+//         console.log("enter valid day")
+// }
 
 
+// arrays
+
+const new2 = [1, 2, 3, 4]
+// let asd = new2.shift();
+// let asd = new2.push(3)
+// let asd = new2.shift();
+// let asd = new2.pop();
+
+// console.log(new2)
+// console.log(asd)
+console.log(new2.at(-1))
+
+
+//objects
+
+// const hamim = {
+//     name: 'hamim',
+//     age: 23,
+//     friends: ['Irfan', 'Kadar', 'Aquib']
+// }
+
+
+
+// console.log(`${hamim.name} has ${hamim.friends.length} friends and his best friend is ${hamim.friends[0]}`)
+
+// // console.log(hamim.friends.length)
+
+
+// let styles = ["Jazz", "Blues", "prog"];
+
+// styles[1] = "rock"
+// styles.push("Rock-n-Roll");
+// styles[Math.ceil((styles.length) / 2)] = "Classics";
+// // alert( styles.shift() );
+// // styles.unshift("Rap", "Reggae");
+// console.log(styles)
+
+// console.log(Math.ceil(2))
+
+let num = "51"
+
+num = + num;
+console.log(typeof num)

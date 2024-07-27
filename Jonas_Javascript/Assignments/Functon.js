@@ -4,3 +4,8 @@ function describeCountry(country, population, capitalCity) {
 }
 let result = describeCountry('Finland', 6, 'Helsinki');
 console.log(result);
+
+const fun = function (name) {
+    console.log(`Bye ${name}`);
+}
+fun('Hamim')
