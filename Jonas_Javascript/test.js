@@ -89,7 +89,7 @@ const new2 = [1, 2, 3, 4]
 
 // console.log(new2)
 // console.log(asd)
-console.log(new2.at(-1))
+// console.log(new2.at(-1))
 
 
 //objects
@@ -121,4 +121,8 @@ console.log(new2.at(-1))
 let num = "51"
 
 num = + num;
-console.log(typeof num)
+// console.log(typeof num)
+
+
+for (i = 1; i <= 5; i++)E
+console.log((i * 10) / 2);
