@@ -126,3 +126,4 @@ num = + num;
 
 for (i = 1; i <= 5; i++)E
 console.log((i * 10) / 2);
+
