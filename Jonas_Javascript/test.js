@@ -118,12 +118,52 @@ const new2 = [1, 2, 3, 4]
 
 // console.log(Math.ceil(2))
 
-let num = "51"
+// let num = "51"
 
-num = + num;
-// console.log(typeof num)
+// num = + num;
+// // console.log(typeof num)
 
 
-for (i = 1; i <= 5; i++)E
-console.log((i * 10) / 2);
+// for (i = 1; i <= 5; i++)E
+// console.log((i * 10) / 2);
 
+// Array destr.
+
+// const [first, , [third, fourth]] = [1, 2, [3, 4]]
+// console.log(first, third, fourth);
+// console.log(fourth);
+
+// const [a, b, c] = [12, 24]
+
+// let [a, b, c] = "abc";
+// console.log(typeof c);
+
+
+let user = {
+    name: "John",
+    years: 30
+};
+
+let { name, years: age, isAdmin = false } = user
+// console.log(name, age, isAdmin);
+
+let salaries = {
+    "John": 100,
+    "Pete": 300,
+    "Mary": 250
+};
+
+const topSalary = function (salaries) {
+
+    let maxSalary = 0
+    let maxName = null;
+    for (let [name, salary] of Object.entries(salaries)) {
+        if (salary > maxSalary) {
+            maxSalary = salary;
+            maxName = name;
+        }
+    }
+    return maxName;
+}
+const max = topSalary(salaries);
+console.log(max);
