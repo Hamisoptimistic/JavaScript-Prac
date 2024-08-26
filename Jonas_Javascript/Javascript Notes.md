@@ -1,4 +1,5 @@
 https://obsius.site/6g5u235a3o3l5x12520i
+https://share.note.sx/gr8875nd#nd3xEFRagnlSVEy0hQIiCtT9c5iBxGOmygHajBLQHn8
 
 ## Variables rules
 - Should start with valid letters.
