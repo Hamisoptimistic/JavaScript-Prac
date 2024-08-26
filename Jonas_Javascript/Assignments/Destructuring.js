@@ -1,31 +1,31 @@
-// // let user = {
-// //     name: "John",
-// //     years: 30
-// // };
+let user2 = {
+    name: "John",
+    years: 30
+};
 
-// // let { name, years: age, isAdmin = false } = user
-// // // console.log(name, age, isAdmin);
+let { name, years: age, isAdmin = false } = user2
+// console.log(name, age, isAdmin);
 
-// // let salaries = {
-// //     "John": 100,
-// //     "Pete": 250,
-// //     "Mary": 250
-// // };
+let salaries = {
+    "John": 100,
+    "Pete": 250,
+    "Mary": 250
+};
 
-// // const topSalary = function (salaries) {
+const topSalary = function (salaries) {
 
-// //     let maxSalary = 0
-// //     let maxName = null;
-// //     for (let [name, salary] of Object.entries(salaries)) {
-// //         if (salary > maxSalary) {
-// //             maxSalary = salary;
-// //             maxName = name;
-// //         }
-// //     }
-// //     return maxName;
-// // }
-// // const max = topSalary(salaries);
-// // console.log(max);
+    let maxSalary = 0
+    let maxName = null;
+    for (let [name, salary] of Object.entries(salaries)) {
+        if (salary > maxSalary) {
+            maxSalary = salary;
+            maxName = name;
+        }
+    }
+    return maxName;
+}
+const max = topSalary(salaries);
+console.log(max);
 
 // Obj dest
 const restaurant = {
@@ -93,3 +93,21 @@ restaurant.order({
     time: 23.00,
     location: "vienna"
 })
+
+// Swapping variable
+let array2 = [2, 3, 4, 5]
+let [bitch, ass] = array2;
+console.log(bitch, ass);
+[ass, bitch] = [bitch, ass]
+console.log(bitch, ass);
+
+
+// Assign to anything at the left-side
+let user = {};
+[user.name, user.surname, ...rest] = "John Smith".split('');
+
+// console.log(user.name); // John
+// console.log(user.surname); // Smith
+console.log(user, typeof rest);
+console.log(rest);
+
